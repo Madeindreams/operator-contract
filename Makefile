@@ -45,6 +45,7 @@ clean-contracts:
 	-rm -fr $(SMARTCONTRACT_ABI_DIR)
 	-rm -fr $(SMARTCONTRACT_BIN_DIR)
 	-rm -fr $(SMARTCONTRACT_GOLANG_DIR)
+	-rm -fr tmp
 
 contracts: $(SMARTCONTRACTS_IN_GOLANG)
 $(SMARTCONTRACTS_IN_GOLANG):
