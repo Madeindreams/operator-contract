@@ -10,6 +10,8 @@
   "dependencies": {
     "@aave/core-v3": "https://github.com/aave/aave-v3-core.git",
     "@openzeppelin/contracts": "^5.0.0",
+    "@uniswap/v2-periphery": "https://github.com/Uniswap/v2-periphery.git",
+    "@uniswap/v3-periphery": "https://github.com/Uniswap/v3-periphery.git",
     "dotenv": "^16.3.1",
     "hardhat": "^2.18.3"
   },
