@@ -14,7 +14,7 @@ SMARTCONTRACT_GOLANG_DIR := go
 SOLIDITY_DIR := ./contracts
 
 
-SMARTCONTRACTS_IN_GOLANG := Operator.go IERC20.go IUniswapV2Router01.go IQuoter.go
+SMARTCONTRACTS_IN_GOLANG := Operator.go OperatorERC20.go IUniswapV2Router01.go IQuoter.go
 
 
 #
@@ -32,7 +32,6 @@ f_get_solidity_filepath = $(addprefix $(SOLIDITY_DIR)/, $(basename $(1)).sol )
 copy_files:
 	cp node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol contracts/
 	cp node_modules/@uniswap/v3-periphery/contracts/interfaces/IQuoter.sol contracts/
-	cp node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol contracts/
 
 #
 # Targets
